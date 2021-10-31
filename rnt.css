@@ -1,0 +1,241 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+html{
+    scroll-behavior: smooth;
+
+}
+/* Navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+}
+
+#navbar::before{
+    content: "";
+    background-color: #202124;
+    position: absolute;
+     top: 0; 
+     left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;  
+    
+}
+
+/* Navigation bar: Logo and image */
+#logo{
+    margin: 3px 23px;
+    
+    ;
+    
+}
+#logo img {
+    width: 100px;
+    height: 59px;
+    margin: 10px 10px;
+    
+   
+
+}
+
+/* Navigation bar: List Styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size:1.3rem
+    
+}
+#navbar ul li a {
+    color: #fff;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none; 
+    font-size: 22px;
+}
+#navbar ul li a:hover {
+    color:black;
+    background-color: #fff;
+}
+ /* Home Section */
+ #home {
+     display: flex;
+     height: 575px;
+     flex-direction: column;
+      align-items: center;
+     justify-content: center;
+     
+ }
+ 
+ #home::before{
+    content: "";
+    background:url('bg1.jpg') no-repeat center center/cover ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 642px;
+    z-index: -1;
+    opacity: 0.89;
+ }
+ #home h1 {
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+ }
+ #home p {
+    color: #fff;
+    text-align: center;
+    font-size:1.5rem;
+    font-family: 'Poppins', sans-serif;
+   
+ }
+ /* Services Section */
+ #services {
+     display: flex;
+     margin: 34px;
+ }
+ #services .box {
+    padding: 0px;
+     margin: 0px 10px;
+    border: 2px solid rgb(51, 3, 3);
+    border-radius: 28px; 
+     background-color: rgb(231, 231, 231);
+     margin-bottom: 40px;
+ }
+ #services .box img {
+     height: 160px;
+     width: 120px;
+     
+    display: block;
+    margin: auto;
+
+ }
+ #services .box p {
+    font-family: 'Poppins', sans-serif;
+}
+#services-container h1{
+    font-size: 3rem;
+}
+/* Clients Section */
+#client-section {
+    position: relative;
+    z-index: -2;
+}
+/* #client-section::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:url('../brickwall.jpg');
+    z-index: -1;
+    opacity: 0.4;
+} */
+#clients {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#clients img {
+height:150px
+}
+.client-item{
+    padding: 34px;
+}
+#client-section h1{
+    font-size: 3rem;
+}
+/* Contact Section */
+#contact{
+    position: relative;
+    z-index:-2;
+}
+/* #contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background:url('../email.jpg') no-repeat center center/cover;
+} */
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius:  9px;
+    font-size: 1.1rem;
+    cursor: auto;
+}
+#contact-box form{
+    width: 40%;
+    z-index:-2;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+}
+#contact h1{
+    font-size: 3rem;
+}
+
+
+
+
+footer{
+    background-color:black;
+    color:white;
+    padding: 9px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+ /* Utility Classes */
+ .h-primary{
+     font-size: 3.8rem;
+     padding: 12px;
+     font-family: 'Poppins', sans-serif;
+ }
+ .h-secondary{
+     font-size: 2.3rem;
+     padding: 12px;
+     font-family: 'Poppins', sans-serif;
+ }
+ .btn{
+    color: #fff;
+    background-color: brown;
+    border: 2px solid white;
+    padding: 6px 20px;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+
+
+ }
+ .center{
+     text-align: center;
+     
+ }
+
+ 
